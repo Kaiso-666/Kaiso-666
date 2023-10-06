@@ -1,4 +1,4 @@
 - 👋 Hi, I’m @Kaiso-666
-- 👀 I’m interested in ROBLOX Hax
-- 🌱 I’m currently learning Lua
+- 👀 I’m interested in Creating JS scripts
+- 🌱 I’m currently learning JS
 - 📫 How to reach me : kaisotheinfinity@gmail.com
