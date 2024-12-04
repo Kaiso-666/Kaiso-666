@@ -30,7 +30,7 @@ label.Parent = frame
 
 while wait(0.5) do
 
-if label.Text == "Rejoining And Adding 10K Exp..." then
+if label.Text == "Rejoining And Adding 10K Exp.." then
 game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 else
 label.Text = label.Text .. "."
