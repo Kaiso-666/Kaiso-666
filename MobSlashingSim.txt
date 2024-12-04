@@ -28,18 +28,14 @@ label.Transparency = 0.75
 label.Text = "Rejoining And Adding 10K Exp"
 label.Parent = frame
 
-i=0
 while wait(0.5) do
-i=i+1
+
 if label.Text == "Rejoining And Adding 10K Exp..." then
-label.Text = "Rejoining And Adding 10K Exp"
+game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 else
 label.Text = label.Text .. "."
 end
-if i==6 then
-game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end
-        end
 end)
 
 Cheats:CreateButton("Fix Exp Not Giving Levels", function()
