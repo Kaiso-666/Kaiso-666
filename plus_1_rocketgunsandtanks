@@ -1,0 +1,38 @@
+
+local lib = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local win = lib:NewWindow("+1 Rocket Guns And Tanks")
+
+local sec = win:NewSection("Stuff")
+
+sec:CreateButton("Button", function()
+        local codes = {
+          "welcome",
+          "h3d77a",
+          "8u2m3d",
+          "789cbc",
+          "6a6a6a",
+          "2h93nm",
+          "9k66m8",
+          "33kk55",
+          "1jk2h3",
+          "8muk22",
+          "9n9n9n",
+          "w7s8h9",
+          "5h5v8g"
+        }
+
+        for _, code in ipairs(codes) do
+          local args = {
+              [1] = {
+                  ["type"] = "Code",
+                  ["func"] = "getReward",
+                  ["data"] = {
+                      ["cdk"] = code
+                  }
+              }
+          }
+
+          game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+        end
+end)
