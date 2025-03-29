@@ -36,21 +36,21 @@ game:GetService("RunService").RenderStepped:Connect(function()
         local tool = getEquippedTool()
         if tool and tool:FindFirstChild("Handle") then
             tool:Activate()
-            -- -- for _, player in ipairs(game.Players:GetPlayers()) do
-                -- -- if player ~= localPlayer and player.Character then
-                    -- -- local otherChar = player.Character
-                    -- -- local humanoid = otherChar:FindFirstChild("Humanoid")
-                    -- -- local hrp = otherChar:FindFirstChild("HumanoidRootPart")
-                    -- -- if humanoid and humanoid.Health > 0 and hrp and localPlayer:DistanceFromCharacter(hrp.Position) <= getgenv().TouchRadius then
-                        -- -- for _, part in ipairs(otherChar:GetChildren()) do
-                            -- -- if part:IsA("BasePart") then
-                                -- -- firetouchinterest(tool.Handle, part, 0)
-                                -- -- firetouchinterest(tool.Handle, part, 1)
-                            -- end
-                        -- end
-                    -- end
-                -- end
-            -- end
+            for _, player in ipairs(game.Players:GetPlayers()) do
+                if player ~= localPlayer and player.Character then
+                    local otherChar = player.Character
+                    local humanoid = otherChar:FindFirstChild("Humanoid")
+                    local hrp = otherChar:FindFirstChild("HumanoidRootPart")
+                    if humanoid and humanoid.Health > 0 and hrp and localPlayer:DistanceFromCharacter(hrp.Position) <= getgenv().TouchRadius then
+                        for _, part in ipairs(otherChar:GetChildren()) do
+                            if part:IsA("BasePart") then
+                                firetouchinterest(tool.Handle, part, 0)
+                                firetouchinterest(tool.Handle, part, 1)
+                            end
+                        end
+                    end
+                end
+            end
         end
     end
 end)
