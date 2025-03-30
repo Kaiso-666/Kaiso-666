@@ -113,10 +113,8 @@ while true do
             -- Move toward target
 			local direction = targetHRP.Position - localHRP.Position
 			direction = Vector3.new(direction.X, 0, direction.Z).unit  -- Ignore vertical movement
-			localHRP.CFrame = localHRP.CFrame:Lerp(
-			    CFrame.new(localHRP.Position, localHRP.Position + direction),
-			    getgenv().CatchSpeed
-			)
+			local targetRotation = CFrame.new(localHRP.Position, localHRP.Position + direction)
+			localHRP.CFrame = localHRP.CFrame:Lerp(targetRotation, getgenv().CatchSpeed * 0.1)
 			
             localPlayer.Character.Humanoid:MoveTo((targetHRP.CFrame * CFrame.new(-3, 0, 0)).p)
 
