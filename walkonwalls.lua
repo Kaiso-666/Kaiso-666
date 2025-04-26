@@ -11553,21 +11553,3 @@ game:GetService("ContextActionService"):BindAction("Toggle", function(action, st
 	end
 end, false, Enum.KeyCode.Z)
 print("end")
-
-local player = game.Players.LocalPlayer
-local defaultTouchSensitivity = Vector2.new(0.00945 * math.pi, 0.003375 * math.pi)
-
-local function onCharacterInit(char)
-    local humanoid = char:WaitForChild("Humanoid")
-    humanoid.Died:Connect(function()
-        TOUCH_SENSITIVTY = defaultTouchSensitivity
-    end)
-    TOUCH_SENSITIVTY = defaultTouchSensitivity
-    Controller = GravityController.new(player)
-    Controller.GetGravityUp = GetGravityUp
-end
-
-player.CharacterAdded:Connect(onCharacterInit)
-if player.Character then
-    onCharacterInit(player.Character)
-end
