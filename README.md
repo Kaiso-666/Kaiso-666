@@ -1,5 +1,60 @@
-Sup, this repostry of mine consists of stuff that is useful to me and could be to you to, it majorly base on python (Discord Self-Bots) and Lua (RBLX Exploit) scripts and nothing much, you can maybe learn stuff by seeing how they are made and stuff well have a great day also below is the list of cool stuff
+Welcome to My Dev Repo
 
-- sbot.py - Is a normal Selfbot Script which has GC and DM messages dump (excluding media) and anti message snipe (basically send another message and deletes it so that the original one is not viewed upon using snipe command) also has a fun mini game of truth and dare
+This repository is a collection of scripts and tools I’ve built mainly for personal use—but they might be useful to you too. It focuses on:
 
-- bot.py - Is normal disocrd bot code which is basically an AI (Gemini AI) which can talk to people in various mood (changeable by its slash command) and yeah literally a talking AI - Originally Made for Frostware Server (https://discord.gg/getfrost)
+Python — primarily Discord self-bots and bot scripts
+
+Lua — Roblox exploit scripts and utilities
+
+
+Explore the code, learn how things work, and feel free to improve on it. Below are some of the standout tools included:
+
+
+---
+
+Projects
+
+- sbot.py
+
+A full-featured Discord selfbot with:
+
+Global Chat (GC) and DM message dumping (excluding media)
+
+Anti-snipe mechanic — sends a fake message that auto-deletes to cover the real one
+
+Includes a mini Truth or Dare game for fun
+
+
+
+---
+
+- bot.py
+
+An AI-powered Discord bot (using Gemini AI), capable of:
+
+Talking with users in various moods (changeable via slash command)
+
+Dynamic conversations
+Originally developed for the Frostware server → discord.gg/getfrost
+
+
+
+---
+
+- fakebot.py
+
+A terminal-based Discord interface that:
+
+Logs you in as a bot account
+
+Lets you interact with users via a simulated chat UI
+Requires setup for specific channels.
+
+
+
+---
+
+Use it. Learn from it. Break it.
+
+Whether you're looking to experiment, learn something new, or dig into exploit mechanics—there's something here for you.
+
