@@ -36,4 +36,6 @@ A terminal-based Discord interface that:
 - Lets you interact with users via a simulated chat UI  
 Requires setup for specific channels.
 
+---
+
 🔗 Reach Me On Discord: kaiso5693
