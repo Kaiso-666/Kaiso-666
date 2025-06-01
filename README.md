@@ -27,7 +27,7 @@ An AI-powered Discord bot (using **Gemini AI**), capable of:
 - Dynamic conversations  
 **Originally developed for the Frostware server** → [discord.gg/getfrost](https://discord.gg/getfrost)
 
-  [Discord Server](https://discord.com/api/guilds/1295258555888177182/widget.json)
+  ![Discord](https://img.shields.io/discord/1295258555888177182?style=flat-square)
 
 ---
 
