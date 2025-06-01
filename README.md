@@ -25,7 +25,7 @@ A full-featured **Discord selfbot** with:
 An AI-powered Discord bot (using **Gemini AI**), capable of:
 - Talking with users in various moods (changeable via slash command)
 - Dynamic conversations  
-**Originally developed for the Frostware server** → [discord.gg/getfrost](https://discord.gg/getfrost)
+**Originally developed for the Frostware server** → [discord.gg/getfrost](https://discord.gg/getfrost) ![Discord Members](https://discord.com/api/guilds/1295258555888177182/widget.png?style=shield)
 
 ---
 
