@@ -11,7 +11,7 @@ Explore the code, learn how things work, and feel free to improve on it. Below a
 
 ## Projects
 
-### `sbot.py`
+### [`sbot.py`](https://github.com/Kaiso-666/Kaiso-666/blob/main/sbot.py)
 
 A full-featured **Discord selfbot** with:
 - Global Chat (GC) and DM message dumping *(excluding media)*
