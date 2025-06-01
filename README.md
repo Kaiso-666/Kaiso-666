@@ -35,3 +35,5 @@ A terminal-based Discord interface that:
 - Logs you in as a bot account
 - Lets you interact with users via a simulated chat UI  
 Requires setup for specific channels.
+
+🔗 Reach Me On Discord: kaiso5693
