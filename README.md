@@ -1,4 +1,4 @@
-# Welcome to My Dev Repo
+# Crazy Repo Fr
 
 This repository is a collection of scripts and tools I’ve built mainly for personal use—but they might be useful to you too. Its mainly based on:
 
