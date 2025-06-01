@@ -1,11 +1,11 @@
 # Welcome to My Dev Repo
 
-This repository is a collection of scripts and tools I’ve built mainly for personal use—but they might be useful to you too. It focuses on:
+This repository is a collection of scripts and tools I’ve built mainly for personal use—but they might be useful to you too. It mainly based on:
 
 - Python — primarily **Discord self-bots** and bot scripts  
 - Lua — **Roblox exploit scripts** and utilities
 
-Explore the code, learn how things work, and feel free to improve on it. Below are some of the standout tools included:
+Explore the code, learn how things work, and feel free to improve on it. Below are some of the cool tools included:
 
 ---
 
