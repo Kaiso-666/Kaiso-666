@@ -20,7 +20,7 @@ A full-featured **Discord selfbot** with:
 
 ---
 
-### `bot.py`
+### [`bot.py`](https://github.com/Kaiso-666/Kaiso-666/blob/main/bot.py)
 
 An AI-powered Discord bot (using **Gemini AI**), capable of:
 - Talking with users in various moods (changeable via slash command)
@@ -29,7 +29,7 @@ An AI-powered Discord bot (using **Gemini AI**), capable of:
 
 ---
 
-### `fakebot.py`
+### [`fakebot.py`](https://github.com/Kaiso-666/Kaiso-666/blob/main/fakebot.py)
 
 A terminal-based Discord interface that:
 - Logs you in as a bot account
