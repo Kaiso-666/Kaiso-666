@@ -1,0 +1,66 @@
+<html>
+
+<head>
+   <title>Making your first discord.py bot! (But on termux!!!)</title>
+</head>
+<font face="Arial" color="White">
+
+   <body bgcolor="#151515">
+      <style>
+         .code {
+           color: #00ff00; /* lime */
+           font-weight: bold;
+         }
+         .ques { color: #ff0000; }
+         .ans { color: #00ff00; }
+      </style>
+      <h1>Getting Started (But on termux!!!)</h1>
+      <p>
+      <pre style="font-family: Arial; color: White; white-space: pre-wrap; word-wrap: break-word;">Follow the steps given below:-
+<ol type="1"><li>Download Termux if you haven't already: <a href="market://details?id=com.termux">Playstore</a> or <a href="https://github.com/termux/termux-app/releases/">GitHub</a><li>Open Termux<li>Execute command <code class="code">pkg update && upgrade -y</code> it is optional but recommended.<li>After that execute command <code class="code">pkg install python -y</code> which installs python which is roughly 100mbs.<li>After the installation of python is done execute command <code class="code">pip install -U discord discord.py</code></ol>
+<b>You've now completed the prerequisites!</b>
+
+Now for the scary part - Coding the bot, but not to worry here's the basic template:-
+
+<code class="code">import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix="!", intents=intents)
+
+@bot.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if message.content.lower() == "ping":
+        await message.channel.send("pong")
+    await bot.process_commands(message)
+
+bot.run("YOUR_TOKEN")</code>
+
+But now, where to put the code???
+
+Eh dont worry, just do <code class="code">nano bot.py</code> to create a file called bot.py (you can change the name) and when it opens in termux just paste the code above. And then do ctrl+x then Y for yes and then press enter, How to press enter on mobile? breh it the button you use to create new line on your soft keyboard which you type with!
+
+Now that's done, but how do I run the code? Simply do <code class="code">python bot.py</code> (or whatever the file name is) 
+
+And that's it, you've a bot running! 
+
+<b>Now for some questions y'all might have</b>
+
+<span class="ques">Q - Can I not edit/make code from a file manager or something?</span>
+<span class="ans">A - Yes you can but uh its a long process if you dont have root</span>
+
+<span class="ques">Q - Are there any limitations compared to pc and stuff?</span>
+<span class="ans">A - No if you are building a "normal" bot and not something like Google server hacker or whatever or if you're building a really large project with like some other coding language along with python and it requires some specific pkgs, there's a chance those packages are not supported. Though you can do this setup in proot ubuntu environment inside termux which overcomes few of these errors but not all.</span>
+
+<span class="ques">Q - Is it safe?</span>
+<span class="ans">A - Yes, unless you use code of others - You can use code made by ai though. Other than that the app termux and everything is safe.</span>
+</pre>
+      </p>
+</font>
+</body>
+
+</html>
