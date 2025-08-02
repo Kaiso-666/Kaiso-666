@@ -1,28 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-   <title>Making your first discord.py bot! (But on termux!!!)</title>
+   <meta charset="UTF-8">
+   <title>Making your first discord.py bot! (But on Termux!!!)</title>
+   <style>
+      body {
+        background-color: #151515;
+        color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h1 {
+        color: #00ffff;
+      }
+      .code {
+        color: #00ff00;
+        font-weight: bold;
+      }
+      .ques {
+        color: #ff0000;
+        display: block;
+        margin-top: 1em;
+      }
+      .ans {
+        color: #00ff00;
+        display: block;
+        margin-bottom: 1em;
+      }
+      pre {
+        background: #1e1e1e;
+        padding: 15px;
+        border-radius: 8px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      a {
+        color: #00ffff;
+      }
+   </style>
 </head>
-<font face="Arial" color="White">
 
-   <body bgcolor="#151515">
-      <style>
-         .code {
-           color: #00ff00; /* lime */
-           font-weight: bold;
-         }
-         .ques { color: #ff0000; }
-         .ans { color: #00ff00; }
-      </style>
-      <h1>Getting Started (But on termux!!!)</h1>
-      <p>
-      <pre style="font-family: Arial; color: White; white-space: pre-wrap; word-wrap: break-word;">Follow the steps given below:-
-<ol type="1"><li>Download Termux if you haven't already: <a href="market://details?id=com.termux">Playstore</a> or <a href="https://github.com/termux/termux-app/releases/">GitHub</a><li>Open Termux<li>Execute command <code class="code">pkg update && upgrade -y</code> it is optional but recommended.<li>After that execute command <code class="code">pkg install python -y</code> which installs python which is roughly 100mbs.<li>After the installation of python is done execute command <code class="code">pip install -U discord discord.py</code></ol>
-<b>You've now completed the prerequisites!</b>
+<body>
+   <h1>Making your first discord.py bot! (But on Termux!!!)</h1>
 
-Now for the scary part - Coding the bot, but not to worry here's the basic template:-
+   <p>Follow the steps given below:</p>
+   <ol>
+      <li>Download Termux if you haven't already: <a href="market://details?id=com.termux">Playstore</a> or <a href="https://github.com/termux/termux-app/releases/">GitHub</a></li>
+      <li>Open Termux</li>
+      <li>Execute command <code class="code">pkg update && upgrade -y</code> (optional but recommended)</li>
+      <li>Then install Python: <code class="code">pkg install python -y</code> (~100 MB)</li>
+      <li>Install the libraries: <code class="code">pip install -U discord discord.py</code></li>
+   </ol>
 
-<code class="code">import discord
+   <p><strong>You've now completed the prerequisites!</strong></p>
+
+   <p>Now for the scary part — coding the bot. Here's the basic template:</p>
+
+   <pre><code class="code">import discord
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -38,29 +73,25 @@ async def on_message(message):
         await message.channel.send("pong")
     await bot.process_commands(message)
 
-bot.run("YOUR_TOKEN")</code>
+bot.run("YOUR_TOKEN")</code></pre>
 
-But now, where to put the code???
+   <p>Save this code using <code class="code">nano bot.py</code> in Termux. Paste the code, press <kbd>Ctrl + X</kbd>, then <kbd>Y</kbd>, then <kbd>Enter</kbd> (your keyboard’s enter key).</p>
 
-Eh dont worry, just do <code class="code">nano bot.py</code> to create a file called bot.py (you can change the name) and when it opens in termux just paste the code above. And then do ctrl+x then Y for yes and then press enter, How to press enter on mobile? breh it the button you use to create new line on your soft keyboard which you type with!
+   <p>Run the bot with: <code class="code">python bot.py</code></p>
 
-Now that's done, but how do I run the code? Simply do <code class="code">python bot.py</code> (or whatever the file name is) 
+   <p><strong>And that’s it! Your bot is live!</strong></p>
 
-And that's it, you've a bot running! 
+   <h2>Q&A</h2>
 
-<b>Now for some questions y'all might have</b>
+   <span class="ques">Q - Can I edit code using a file manager?</span>
+   <span class="ans">A - Yes, but it's tricky without root access.</span>
 
-<span class="ques">Q - Can I not edit/make code from a file manager or something?</span>
-<span class="ans">A - Yes you can but uh its a long process if you dont have root</span>
+   <span class="ques">Q - Any limitations compared to PC?</span>
+   <span class="ans">A - Not for simple bots. For complex stuff, some packages may be unsupported. Proot Ubuntu helps bypass some of this.</span>
 
-<span class="ques">Q - Are there any limitations compared to pc and stuff?</span>
-<span class="ans">A - No if you are building a "normal" bot and not something like Google server hacker or whatever or if you're building a really large project with like some other coding language along with python and it requires some specific pkgs, there's a chance those packages are not supported. Though you can do this setup in proot ubuntu environment inside termux which overcomes few of these errors but not all.</span>
+   <span class="ques">Q - Is this safe?</span>
+   <span class="ans">A - Yes, as long as you use your own or AI-generated code. Termux is safe.</span>
 
-<span class="ques">Q - Is it safe?</span>
-<span class="ans">A - Yes, unless you use code of others - You can use code made by ai though. Other than that the app termux and everything is safe.</span>
-</pre>
-      </p>
-</font>
 </body>
 
 </html>
