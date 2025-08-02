@@ -1,63 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <title>Making your first discord.py bot! (But on Termux!!!)</title>
-   <style>
-      body {
-        background-color: #151515;
-        color: white;
-        font-family: Arial, sans-serif;
-        padding: 20px;
-      }
-      h1 {
-        color: #00ffff;
-      }
-      .code {
-        color: #00ff00;
-        font-weight: bold;
-      }
-      .ques {
-        color: #ff0000;
-        display: block;
-        margin-top: 1em;
-      }
-      .ans {
-        color: #00ff00;
-        display: block;
-        margin-bottom: 1em;
-      }
-      pre {
-        background: #1e1e1e;
-        padding: 15px;
-        border-radius: 8px;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-      }
-      a {
-        color: #00ffff;
-      }
-   </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord.py Bot on Termux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="flex flex-col md:flex-row min-h-screen relative">
 
-<body>
-   <h1>Making your first discord.py bot! (But on Termux!!!)</h1>
+    <!-- Mobile Header -->
+    <div class="md:hidden p-4 bg-gray-800 flex justify-between items-center">
+      <h1 class="text-lg text-cyan-400 font-bold">Discord.py Docs (By Kaiso)</h1>
+      <button id="menuBtn" class="text-white text-2xl focus:outline-none">&#9776;</button>
+    </div>
 
-   <p>Follow the steps given below:</p>
-   <ol>
-      <li>Download Termux if you haven't already: <a href="market://details?id=com.termux">Playstore</a> or <a href="https://github.com/termux/termux-app/releases/">GitHub</a></li>
-      <li>Open Termux</li>
-      <li>Execute command <code class="code">pkg update && upgrade -y</code> (optional but recommended)</li>
-      <li>Then install Python: <code class="code">pkg install python -y</code> (~100 MB)</li>
-      <li>Install the libraries: <code class="code">pip install -U discord discord.py</code></li>
-   </ol>
+    <!-- Backdrop -->
+    <div id="backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div>
 
-   <p><strong>You've now completed the prerequisites!</strong></p>
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed md:static top-0 left-0 h-full w-64 bg-gray-800 border-r border-gray-700 p-6 z-50 transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out">
+      <nav class="space-y-2">
+        <a href="#steps" class="block text-cyan-300 hover:underline">Steps</a>
+        <a href="#code" class="block hover:text-cyan-300">Bot Code</a>
+        <a href="#run" class="block hover:text-cyan-300">Running</a>
+        <a href="#faq" class="block hover:text-cyan-300">Q&A</a>
+      </nav>
+    </aside>
 
-   <p>Now for the scary part — coding the bot. Here's the basic template:</p>
+    <!-- Main Content -->
+    <main class="flex-1 p-6 md:p-10 space-y-10">
+      <section id="steps">
+        <h2 class="text-2xl text-cyan-400 font-semibold mb-4">Making your first discord.py bot! (But on Termux!!!)</h2>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Download Termux: 
+            <a href="market://details?id=com.termux" class="text-cyan-300 underline">Playstore</a> or 
+            <a href="https://github.com/termux/termux-app/releases/" class="text-cyan-300 underline">GitHub</a>
+          </li>
+          <li>Open Termux</li>
+          <li><code class="text-green-400 font-bold">pkg update && upgrade -y</code></li>
+          <li><code class="text-green-400 font-bold">pkg install python -y</code></li>
+          <li><code class="text-green-400 font-bold">pip install -U discord discord.py</code></li>
+        </ol>
+        <p class="mt-4 font-bold">You've now completed the prerequisites!</p>
+      </section>
 
-   <pre><code class="code">import discord
+      <section id="code">
+        <h2 class="text-xl font-semibold mb-2 text-cyan-400">Bot Code</h2>
+        <pre class="bg-gray-800 p-4 rounded-lg overflow-x-auto text-green-400 text-sm">
+<code>import discord
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -74,24 +65,46 @@ async def on_message(message):
     await bot.process_commands(message)
 
 bot.run("YOUR_TOKEN")</code></pre>
+      </section>
 
-   <p>Save this code using <code class="code">nano bot.py</code> in Termux. Paste the code, press <kbd>Ctrl + X</kbd>, then <kbd>Y</kbd>, then <kbd>Enter</kbd> (your keyboard’s enter key).</p>
+      <section id="run">
+        <h2 class="text-xl font-semibold mb-2 text-cyan-400">Running</h2>
+        <p>Save with <code class="text-green-400 font-bold">nano bot.py</code>. Then <kbd>Ctrl + X</kbd> → <kbd>Y</kbd> → <kbd>Enter</kbd></p>
+        <p>Run with <code class="text-green-400 font-bold">python bot.py</code></p>
+        <p class="mt-4 font-bold">Your bot is now live!</p>
+      </section>
 
-   <p>Run the bot with: <code class="code">python bot.py</code></p>
+      <section id="faq">
+        <h2 class="text-xl font-semibold mb-4 text-cyan-400">Q&A</h2>
+        <p><span class="text-red-500 font-semibold">Q - Can I edit code using file manager?</span><br>
+        <span class="text-green-400">A - Yes, but tricky without root access.</span></p>
 
-   <p><strong>And that’s it! Your bot is live!</strong></p>
+        <p class="mt-4"><span class="text-red-500 font-semibold">Q - Any limitations?</span><br>
+        <span class="text-green-400">A - Simple bots work. Complex packages may fail. Use Proot Ubuntu.</span></p>
 
-   <h2>Q&A</h2>
+        <p class="mt-4"><span class="text-red-500 font-semibold">Q - Is this safe?</span><br>
+        <span class="text-green-400">A - Yes, if you use your own or AI-generated code.</span></p>
+      </section>
+    </main>
+  </div>
 
-   <span class="ques">Q - Can I edit code using a file manager?</span>
-   <span class="ans">A - Yes, but it's tricky without root access.</span>
+  <script>
+    const btn = document.getElementById("menuBtn")
+    const sidebar = document.getElementById("sidebar")
+    const backdrop = document.getElementById("backdrop")
 
-   <span class="ques">Q - Any limitations compared to PC?</span>
-   <span class="ans">A - Not for simple bots. For complex stuff, some packages may be unsupported. Proot Ubuntu helps bypass some of this.</span>
+    btn.addEventListener("click", () => {
+      const visible = sidebar.classList.contains("translate-x-0")
+      sidebar.classList.toggle("-translate-x-full", visible)
+      sidebar.classList.toggle("translate-x-0", !visible)
+      backdrop.classList.toggle("hidden", visible)
+    })
 
-   <span class="ques">Q - Is this safe?</span>
-   <span class="ans">A - Yes, as long as you use your own or AI-generated code. Termux is safe.</span>
-
+    backdrop.addEventListener("click", () => {
+      sidebar.classList.add("-translate-x-full")
+      sidebar.classList.remove("translate-x-0")
+      backdrop.classList.add("hidden")
+    })
+  </script>
 </body>
-
 </html>
