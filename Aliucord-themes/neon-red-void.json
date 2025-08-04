@@ -1,72 +1,189 @@
 {
-  "name": "Dark Neon Crimson",
-  "description": "Ultra‑dark background, red neon text & accents only",
-  "authors":[{"name":"Kaizo"}],
-  "semanticColors":{
-    "ANDROID_RIPPLE":["#220000","#220000"],
-    "BACKGROUND_ACCENT":["#000000","#000000"],
-    "BACKGROUND_MENTIONED":["#000000","#000000"],
-    "BACKGROUND_MENTIONED_HOVER":["#000000","#000000"],
-    "BACKGROUND_MODIFIER_ACCENT":["#000000","#000000"],
-    "BACKGROUND_MODIFIER_ACTIVE":["#000000","#000000"],
-    "BACKGROUND_MODIFIER_HOVER":["#000000","#000000"],
-    "BACKGROUND_MODIFIER_SELECTED":["#000000","#000000"],
-    "BACKGROUND_MOBILE_PRIMARY":["#000000","#000000"],
-    "BACKGROUND_MOBILE_SECONDARY":["#000000","#000000"],
-    "BACKGROUND_NESTED_FLOATING":["#000000","#000000"],
-    "BACKGROUND_PRIMARY":["#000000","#000000"],
-    "BACKGROUND_SECONDARY":["#000000","#000000"],
-    "BACKGROUND_SECONDARY_ALT":["#000000","#000000"],
-    "BACKGROUND_TERTIARY":["#000000","#000000"],
-    "BG_BASE_PRIMARY":["#000000","#000000"],
-    "BG_BASE_SECONDARY":["#000000","#000000"],
-    "BG_BASE_TERTIARY":["#000000","#000000"],
-    "EMBED_BACKGROUND":["#000000","#000000"],
-    "CARD_PRIMARY_BG":["#000000","#000000"],
-    "CARD_PRIMARY_PRESSED_BG":["#000000","#000000"],
-    "CARD_SECONDARY_BG":["#000000","#000000"],
-    "CHAT_BACKGROUND":["#000000","#000000"],
-    "INPUT_BACKGROUND":["#000000","#000000"],
-
-    "TEXT_NORMAL":["#ff1111","#ff1111"],
-    "TEXT_MUTED":["#aa1111","#aa1111"],
-    "TEXT_PRIMARY":["#ff1111","#ff1111"],
-    "TEXT_LINK":["#ff3333","#ff3333"],
-
-    "INTERACTIVE_NORMAL":["#cc1111","#cc1111"],
-    "INTERACTIVE_HOVER":["#ff2222","#ff2222"],
-    "INTERACTIVE_ACTIVE":["#ff3333","#ff3333"],
-    "INTERACTIVE_MUTED":["#990000","#990000"],
-
-    "CHANNEL_ICON":["#ff1111","#ff1111"],
-    "HEADER_PRIMARY":["#ff1111","#ff1111"],
-    "HEADER_SECONDARY":["#cc1111","#cc1111"],
-
-    "REDESIGN_CHANNEL_NAME_TEXT":["#ff1111","#ff1111"],
-    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT":["#ff1111","#ff1111"],
-    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND":["#ff3333","#ff3333"],
-    "THREAD_CHANNEL_SPINE":["#990000","#990000"],
-    "SPOILER_HIDDEN_BACKGROUND":["#000000","#000000"],
-    "SPOILER_REVEALED_BACKGROUND":["#00000088","#00000088"]
-  },
-  "rawColors":{
-    "RED_500":"#ff1111",
-    "RED_700":"#aa1111",
-    "PRIMARY_900":"#000000",
-    "WHITE":"#e6e6e6"
-  },
-  "plus":{
-    "version":"1",
-    "customOverlays":false,
-    "mentionLineColor":"#ff2222",
-    "icons":{
-      "ic_close_24px":"#ff1111",
-      "ic_selection_checked_24px":"#ff2222",
-      "ReactionIcon":"#ff1111",
-      "StatusDND":"#ff1111",
-      "SettingsIcon":"#ff1111",
-      "MoreHorizontalIcon":"#ff1111"
-    }
-  },
-  "spec":2
+   "name": "Crimson Neon Full",
+   "description": "Ultra‑dark crimson red neon theme, improved contrast and hover feedback",
+   "authors": [
+      {
+         "name": "Kaizo"
+      }
+   ],
+   "spec": 2,
+   "semanticColors": {
+      "ANDROID_RIPPLE": [
+         "#660000",
+         "#660000"
+      ],
+      "BACKGROUND_ACCENT": [
+         "#331111",
+         "#331111"
+      ],
+      "BACKGROUND_MENTIONED": [
+         "#66000088",
+         "#66000088"
+      ],
+      "BACKGROUND_MENTIONED_HOVER": [
+         "#880000AA",
+         "#880000AA"
+      ],
+      "BACKGROUND_MODIFIER_ACCENT": [
+         "#220000",
+         "#220000"
+      ],
+      "BACKGROUND_MODIFIER_ACTIVE": [
+         "#554444",
+         "#554444"
+      ],
+      "BACKGROUND_MODIFIER_HOVER": [
+         "#440000AA",
+         "#440000AA"
+      ],
+      "BACKGROUND_MODIFIER_SELECTED": [
+         "#44000088",
+         "#44000088"
+      ],
+      "BACKGROUND_MOBILE_PRIMARY": [
+         "#000000",
+         "#000000"
+      ],
+      "BACKGROUND_MOBILE_SECONDARY": [
+         "#110000",
+         "#110000"
+      ],
+      "BACKGROUND_NESTED_FLOATING": [
+         "#110000",
+         "#110000"
+      ],
+      "BACKGROUND_PRIMARY": [
+         "#000000",
+         "#000000"
+      ],
+      "BACKGROUND_SECONDARY": [
+         "#1A0000",
+         "#1A0000"
+      ],
+      "BACKGROUND_SECONDARY_ALT": [
+         "#220000",
+         "#220000"
+      ],
+      "BACKGROUND_TERTIARY": [
+         "#220000",
+         "#220000"
+      ],
+      "BG_BASE_PRIMARY": [
+         "#000000",
+         "#000000"
+      ],
+      "BG_BASE_SECONDARY": [
+         "#110000",
+         "#110000"
+      ],
+      "BG_BASE_TERTIARY": [
+         "#220000",
+         "#220000"
+      ],
+      "EMBED_BACKGROUND": [
+         "#330000",
+         "#330000"
+      ],
+      "CARD_PRIMARY_BG": [
+         "#110000",
+         "#110000"
+      ],
+      "CARD_PRIMARY_PRESSED_BG": [
+         "#550000",
+         "#550000"
+      ],
+      "CARD_SECONDARY_BG": [
+         "#220000",
+         "#220000"
+      ],
+      "CHANNEL_ICON": [
+         "#FF2222",
+         "#FF2222"
+      ],
+      "CHANNELS_DEFAULT": [
+         "#CC2222",
+         "#CC2222"
+      ],
+      "CHAT_BACKGROUND": [
+         "#000000",
+         "#110000"
+      ],
+      "HEADER_PRIMARY": [
+         "#FF3333",
+         "#FF3333"
+      ],
+      "HEADER_SECONDARY": [
+         "#DD4444",
+         "#DD4444"
+      ],
+      "INPUT_BACKGROUND": [
+         "#220000",
+         "#220000"
+      ],
+      "INTERACTIVE_ACTIVE": [
+         "#FF5555",
+         "#FF5555"
+      ],
+      "INTERACTIVE_HOVER": [
+         "#FF4444",
+         "#FF4444"
+      ],
+      "INTERACTIVE_MUTED": [
+         "#BB1111",
+         "#BB1111"
+      ],
+      "INTERACTIVE_NORMAL": [
+         "#CC1111",
+         "#CC1111"
+      ],
+      "TEXT_LINK": [
+         "#FF4444",
+         "#FF4444"
+      ],
+      "TEXT_MUTED": [
+         "#AA1111",
+         "#AA1111"
+      ],
+      "TEXT_NORMAL": [
+         "#FF1111",
+         "#FF1111"
+      ],
+      "TEXT_PRIMARY": [
+         "#FF2222",
+         "#FF2222"
+      ],
+      "THREAD_CHANNEL_SPINE": [
+         "#550000",
+         "#550000"
+      ],
+      "SPOILER_HIDDEN_BACKGROUND": [
+         "#440000AA",
+         "#440000AA"
+      ],
+      "SPOILER_REVEALED_BACKGROUND": [
+         "#440000CC",
+         "#440000CC"
+      ]
+   },
+   "rawColors": {
+      "GUILD_BOOSTING_BLUE": "#FF0000",
+      "GUILD_BOOSTING_BLUE_FOR_GRADIENTS": "#FF0000",
+      "GUILD_BOOSTING_PINK": "#FF1111",
+      "CHAT_MENTIONS_BACKGROUND_DARK": "#FF222244",
+      "CHAT_MENTIONS_BACKGROUND_LIGHT": "#FF222244",
+      "CHAT_MENTIONS_FOREGROUND_DARK": "#FF3333",
+      "CHAT_MENTIONS_FOREGROUND_LIGHT": "#FF3333"
+   },
+   "plus": {
+      "version": "1",
+      "customOverlays": true,
+      "mentionLineColor": "#FF3333",
+      "icons": {
+         "ic_close_24px": "#FF1111",
+         "ic_radio_circle_checked": "#FF5555",
+         "ic_radio_circle_checked__overlay": "#FF2222",
+         "img_nitro_remixing": "#FF2222",
+         "StatusDND": "#FF3333"
+      }
+   }
 }
